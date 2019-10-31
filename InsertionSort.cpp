@@ -34,9 +34,9 @@ int main() {
 
 
     //record the time of binary insertion sort
-    clock_t start_binaryInsertionSort = clock();
+    clock_t start_binarysort = clock();
     insertionSort(v, v.size());
-    clock_t end_binaryInsertionSort = clock();
+    clock_t end_binarysort = clock();
 
     // check if sorted
     for (int i = 1; i < v.size(); i++) {
@@ -50,17 +50,20 @@ int main() {
     }
     cout<<endl;
 
-
-
-
     // tracked the time of Linkedlist insertion sort
-    clock_t start_linkedListInsertionSort = clock();
+    clock_t start_insertionsort = clock();
     L.InsertionSort();
-    clock_t end_linkedListInsertionSort = clock();
+    clock_t end_insertionsort = clock();
 
     //Print out sorted linked list
     cout << "List after linked list insertion sort: " << endl;
     L.printList();
+
+    double elapsed_binarysort = double(end_binarysort - start_binarysort) / CLOCKS_PER_SEC;
+    double elapsed_insertionsort = double(end_insertionsort - start_insertionsort) / CLOCKS_PER_SEC;
+
+    cout<<"time for binarysort:"<<elapsed_binarysort<<endl;
+    cout<<"time for insertionsort:"<<elapsed_insertionsort<<endl;
 
 }
 
