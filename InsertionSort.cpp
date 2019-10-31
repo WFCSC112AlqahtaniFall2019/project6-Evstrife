@@ -46,8 +46,9 @@ int main() {
     // print out sorted list
     cout<<"after binary insertion sort:"<<endl;
     for (int i = 0; i < v.size(); i++) {
-        cout << v[i] << endl;
+        cout << v[i] << "\t";
     }
+    cout<<endl;
 
 
 
