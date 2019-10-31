@@ -1,0 +1,4 @@
+In this project, we use two different soring method to sort vector and linked list. According to the execution time picture, we can
+find that the execution time for binary insertion sort is growing exponentially, while the execution time for insertion sort in linked
+list is growing much slower(The run time for insertion sort as we test is always shorter than 0.1 sec).So we come to an conclusion that
+ when the input length is huge, binary insertion search is less efficient than the linked list insertion sort.
