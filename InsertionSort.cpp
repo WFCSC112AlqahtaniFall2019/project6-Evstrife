@@ -21,7 +21,7 @@ int main() {
 
     // generate vector of random integers
     for (int i = 0; i < v.size(); i++) {
-        v[i] = rand() % 1000;
+        v[i] = rand() % 100;
     }
 
     //create a linked list for sorting
