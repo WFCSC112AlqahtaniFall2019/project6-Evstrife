@@ -9,10 +9,9 @@ public:
         value = v;
         next = n;
     }
-private:
 
-    int value;
     Node* next;
+    int value;
 
 };
 
